@@ -19,7 +19,7 @@ contract NetworkChecker {
 	Network public network;
 	
 	// 주어진 주소가 스마트 계약인지 확인합니다.
-	function checkIsSmartContract(address addr) view private returns (bool) {
+	function checkIsSmartContract(address addr) private view returns (bool) {
 		uint32 size;
 		assembly { size := extcodesize(addr) }
 		return size > 0;
