@@ -1,6 +1,5 @@
 pragma solidity ^0.5.1;
 
-// 숫자 계산 시 오버플로우 문제를 방지하기 위한 라이브러리
 contract NetworkChecker {
 	
 	address constant private MAINNET_MILESTONE_ADDRESS = 0xa6e90A28F446D3639916959B6087F68D9B83fca9;
